@@ -1,12 +1,13 @@
-<h1 align="center">MHDDoS - DDoS Attack Script With 56 Methods</h1>
+<h1 align="center">MD-DDos - DDoS Attack Script With 56 Methods</h1>
+<h3 align="center">Dev by MD ABU SHALEM ALAM, From Sanjivani University</h3>
 <em><h5 align="center">(Programming Language - Python 3)</h5></em>
 
 <p align="center">
-<a href="#"><img alt="MH-DDoS forks" src="https://img.shields.io/github/forks/MatrixTM/MHDDoS?style=for-the-badge"></a>
-<a href="#"><img alt="MH-DDoS last commit (main)" src="https://img.shields.io/github/last-commit/MatrixTM/MHDDoS/main?color=green&style=for-the-badge"></a>
-<a href="#"><img alt="MH-DDoS Repo stars" src="https://img.shields.io/github/stars/MatrixTM/MHDDoS?style=for-the-badge&color=yellow"></a>
-<a href="#"><img alt="MH-DDoS License" src="https://img.shields.io/github/license/MatrixTM/MHDDoS?color=orange&style=for-the-badge"></a>
-<a href="https://github.com/MatrixTM/MHDDoS/issues"><img alt="MatrixTM issues" src="https://img.shields.io/github/issues/MatrixTM/MHDDoS?color=purple&style=for-the-badge"></a>
+<a href="#"><img alt="MD-DDos forks" src="https://img.shields.io/github/forks/MD-HACKER07/MD-DDos?style=for-the-badge"></a>
+<a href="#"><img alt="MD-DDos last commit (main)" src="https://img.shields.io/github/last-commit/MD-HACKER07/MD-DDos/main?color=green&style=for-the-badge"></a>
+<a href="#"><img alt="MD-DDos Repo stars" src="https://img.shields.io/github/stars/MD-HACKER07/MD-DDos?style=for-the-badge&color=yellow"></a>
+<a href="#"><img alt="MD-DDos License" src="https://img.shields.io/github/license/MD-HACKER07/MD-DDos?color=orange&style=for-the-badge"></a>
+<a href="https://github.com/MD-HACKER07/MD-DDos/issues"><img alt="MD ABU SHALEM ALAM issues" src="https://img.shields.io/github/issues/MD-HACKER07/MD-DDos?color=purple&style=for-the-badge"></a>
   
 <p align="center">Please Don't Attack websites without the owner's consent.</p>
 
@@ -15,14 +16,14 @@
 
 ## Features And Methods
 
- * 💣 Layer7
+ * Layer7
 
    * <img src="https://img.icons8.com/cotton/344/domain.png" width="16" height="16" alt="get"> GET | GET Flood
    * <img src="https://cdn0.iconfinder.com/data/icons/database-storage-5/60/server__database__fire__burn__safety-512.png" width="16" height="16" alt="post"> POST | POST Flood
    * <img src="https://static-00.iconduck.com/assets.00/ovh-icon-2048x2048-l4c3izvg.png" width="16" height="16" alt="ovh"> OVH | Bypass OVH
    * <img src="https://cdn-icons-png.flaticon.com/512/1691/1691948.png" width="16" height="16" alt="ovh"> RHEX | Random HEX
    * <img src="https://cdn-icons-png.flaticon.com/512/4337/4337972.png" width="16" height="16" alt="ovh"> STOMP | Bypass chk_captcha
-   * <img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/cyber-bullying-2557797-2152371.png" width="16" height="16" alt="stress"> STRESS | Send HTTP Packet With High Byte 
+   * <img src="https://cdn-iconscout.com/icon/premium/png-256-thumb/cyber-bullying-2557797-2152371.png" width="16" height="16" alt="stress"> STRESS | Send HTTP Packet With High Byte 
    * <img src="https://pbs.twimg.com/profile_images/1351562987224641544/IKb4q_yd_400x400.jpg" width="16" height="16" alt="dyn"> DYN | A New Method With Random SubDomain
    * <img src="https://cdn-icons-png.flaticon.com/512/6991/6991643.png" width="16" height="16" alt="downloader"> DOWNLOADER | A New Method of Reading data slowly
    * <img src="https://cdn2.iconfinder.com/data/icons/poison-and-venom-fill/160/loris2-512.png" width="16" height="16" alt="slow"> SLOW | Slowloris Old Method of DDoS
@@ -41,11 +42,11 @@
    * <img src="https://techcrunch.com/wp-content/uploads/2019/06/J2LlHqT3qJl0bG9Alpgc-1-730x438.png?w=730" width="16" height="16" alt="CloudFlare UnderAttack Mode"> CFBUAM | CloudFlare Under Attack Mode Bypass
    * <img src="http://iclouddnsbypass.com/wp-content/uploads/2015/02/iCloudDNSBypassServer.ico" width="16" height="16" alt="bypass"> BYPASS |  Bypass Normal AntiDDoS
    * <img src="https://cdn-icons-png.flaticon.com/512/905/905568.png" width="16" height="16" alt="bypass"> BOMB |  Bypass with codesenberg/bombardier
-   * 🔪 KILLER | Run many threads to kill a target
-   * 🧅 TOR | Bypass onion website
+   * KILLER | Run many threads to kill a target
+   * TOR | Bypass onion website
 
 
-* 🧨 Layer4: 
+* Layer4: 
   * <img src="https://raw.githubusercontent.com/kgretzky/pwndrop/master/media/pwndrop-logo-512.png" width="16" height="16" alt="tcp"> TCP | TCP Flood Bypass
   * <img src="https://styles.redditmedia.com/t5_2rxmiq/styles/profileIcon_snoob94cdb09-c26c-4c24-bd0c-66238623cc22-headshot.png" width="16" height="16" alt="udp"> UDP | UDP Flood Bypass
   * <img src="https://cdn-icons-png.flaticon.com/512/1918/1918576.png" width="16" height="16" alt="syn"> SYN | SYN Flood
@@ -55,7 +56,7 @@
   * <img src="https://ia803109.us.archive.org/27/items/source-engine-video-projects/source-engine-video-projects_itemimage.png" width="16" height="16" alt="vse"> VSE | Send Valve Source Engine Protocol
   * <img src="https://mycrackfree.com/wp-content/uploads/2018/08/TeamSpeak-Server-9.png" width="16" height="16" alt="teamspeak 3"> TS3 | Send Teamspeak 3 Status Ping Protocol
   * <img src="https://cdn2.downdetector.com/static/uploads/logo/75ef9fcabc1abea8fce0ebd0236a4132710fcb2e.png" width="16" height="16" alt="fivem"> FIVEM | Send FiveM Status Ping Protocol
-  * <img src="https://cdn.iconscout.com/icon/free/png-512/redis-4-1175103.png" width="16" height="16" alt="mem"> MEM | Memcached Amplification
+  * <img src="https://cdn-iconscout.com/icon/free/png-512/redis-4-1175103.png" width="16" height="16" alt="mem"> MEM | Memcached Amplification
   * <img src="https://lyrahosting.com/wp-content/uploads/2020/06/ddos-attack-icon.png" width="16" height="16" alt="ntp"> NTP | NTP Amplification
   * <img src="https://cdn-icons-png.flaticon.com/512/4712/4712139.png" width="16" height="16" alt="mcbot"> MCBOT | Minecraft Bot Attack
   * <img src="https://cdn.worldvectorlogo.com/logos/minecraft-1.svg" width="16" height="16" alt="minecraft"> MINECRAFT | Minecraft Status Ping Protocol
@@ -66,25 +67,25 @@
   * <img src="https://help.apple.com/assets/6171BD2C588E52621824409D/6171BD2D588E5262182440A4/en_US/8b631353e070420f47530bf95f1a7fae.png" width="16" height="16" alt="ard"> ARD | Apple Remote Desktop Amplification
   * <img src="https://www.tenforums.com/geek/gars/images/2/types/thumb__emote__esktop__onnection.png" width="16" height="16" alt="rdp"> RDP |  Remote Desktop Protocol Amplification
 
-* ⚙️ Tools - Runs With 
+* Tools - Runs With 
 `
 python3 start.py tools
 `
-  * 🌟 CFIP | Find Real IP Address Of Websites Powered By Cloudflare
-  * 🔪 DNS | Show DNS Records Of Sites
-  * 📍  TSSRV | TeamSpeak SRV Resolver
-  * ⚠  PING | PING Servers
-  * 📌 CHECK | Check If Websites Status
-  * 😎 DSTAT | That Shows Bytes Received, bytes Sent and their amount
+  * CFIP | Find Real IP Address Of Websites Powered By Cloudflare
+  * DNS | Show DNS Records Of Sites
+  * TSSRV | TeamSpeak SRV Resolver
+  * PING | PING Servers
+  * CHECK | Check If Websites Status
+  * DSTAT | That Shows Bytes Received, bytes Sent and their amount
 
-* 🎩 Other
-  * ❌ STOP | STOP All Attacks
-  * 🌠 TOOLS | Console Tools
-  * 👑 HELP | Show Usage Script
+* Other
+  * STOP | STOP All Attacks
+  * TOOLS | Console Tools
+  * HELP | Show Usage Script
 
   
 <h1 align="center">
-Our social's💻
+Our social's
   
 </h2> 
 
@@ -96,13 +97,13 @@ Our social's💻
 </div>
 
  * [Matrix community Telegram channel](https://t.me/Matrix_Development)
- * [Matrix team Telegram Group](https://t.me/MatrixTMChat)
- * [GitHub](https://github.com/MatrixTM)
+ * [Matrix team Telegram Group](https://t.me/YourTelegramChannel)
+ * [GitHub](https://github.com/MD-HACKER07)
 ### If u Like the project, leave a star on the repository!
 
 ## Downloads
 
-You can download it from [GitHub Releases](https://github.com/MatrixTM/MHDDoS/releases)
+You can download it from [GitHub Releases](https://github.com/MD-HACKER07/MD-DDos/releases)
 
 ### Getting Started
 
@@ -113,7 +114,7 @@ You can download it from [GitHub Releases](https://github.com/MatrixTM/MHDDoS/re
 * [impacket](https://github.com/SecureAuthCorp/impacket)
 * [requests](https://github.com/psf/requests)
 * [Python3][python3]
-* [PyRoxy](https://github.com/MatrixTM/PyRoxy)
+* [PyRoxy](https://github.com/MD-HACKER07/PyRoxy)
 * [icmplib](https://github.com/ValentinBELYN/icmplib)
 * [certifi](https://github.com/certifi/python-certifi)
 * [psutil](https://github.com/giampaolo/psutil)
@@ -122,24 +123,24 @@ You can download it from [GitHub Releases](https://github.com/MatrixTM/MHDDoS/re
 
 ## Documentation
 
-You can read it from [GitHub Wiki](https://github.com/MatrixTM/MHDDoS/wiki)
+You can read it from [GitHub Wiki](https://github.com/MD-HACKER07/MD-DDos/wiki)
 
 **Clone and Install Script**
 
 ```shell script
-git clone https://github.com/MatrixTM/MHDDoS.git
-cd MHDDoS
+git clone https://github.com/MD-HACKER07/MD-DDos.git
+cd MD-DDos
 pip install -r requirements.txt
 ```
 
 **One-Line Installing on Fresh VPS**
 
 ```shell script
-apt -y update && apt -y install curl wget libcurl4 libssl-dev python3 python3-pip make cmake automake autoconf m4 build-essential git && git clone https://github.com/MatrixTM/MHDDoS.git && cd MH* && pip3 install -r requirements.txt
+apt -y update && apt -y install curl wget libcurl4 libssl-dev python3 python3-pip make cmake automake autoconf m4 build-essential git && git clone https://github.com/MD-HACKER07/MD-DDos.git && cd MD-DDos && pip3 install -r requirements.txt
 ```
 
 [python3]: https://python.org 'Python3'
-[github issues]: https://github.com/MatrixTM/MHDDoS/issues 'enter'
+[github issues]: https://github.com/MD-HACKER07/MD-DDos/issues 'enter'
 
 ---
 
