@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://i.imgur.com/aNrHJcA.png" alt="MD-DDoS Logo" width="500"/>
+  <img src="https://i.postimg.cc/Hn5D60bw/IMG-20250714-171202.jpg" alt="MD-DDoS Logo" width="500"/>
   <h1>MD-DDoS</h1>
   <h3>A powerful DDoS attack script with a graphical user interface and 50+ methods.</h3>
 </div>
