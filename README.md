@@ -32,7 +32,7 @@ This tool is for educational purposes only. The developer is not responsible for
 
 Below are links to diagrams detailing the application's architecture and a screenshot of the user interface.
 
-- **[Application Screenshot](https://i.imgur.com/4Q7v2wn.png)**
+- **[Application Screenshot](https://i.postimg.cc/Hn5D60bw/IMG-20250714-171202.jpg)**
 - **[Main Architecture Diagram](architecture.pdf)**
 - **[Layer 7 Attack Methods](layer7_attacks.pdf)**
 - **[Layer 4 Attack Methods](layer4_attacks.pdf)**
@@ -40,27 +40,6 @@ Below are links to diagrams detailing the application's architecture and a scree
 
 ---
 
-## 📦 Building from Source
-
-To create a standalone executable, first install PyInstaller:
-
-```bash
-pip install pyinstaller
-```
-
-Then, run the following command to build the application:
-
-```bash
-# For Linux
-pyinstaller --noconfirm --onefile --windowed --add-data="logo.png:." --add-data="dev Profile:dev Profile" gui.py
-
-# For Windows
-pyinstaller --noconfirm --onefile --windowed --icon=icon.ico --add-data="logo.png;." --add-data="dev Profile;dev Profile" gui.py
-```
-
-The final executable will be located in the `dist/` directory.
-
----
 
 ## 🚀 Getting Started
 
@@ -119,8 +98,8 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 For questions or support, please join our community channels:
 
-- [Telegram Channel](https://t.me/Matrix_Development)
-- [Telegram Group](https://t.me/YourTelegramChannel)
+- [Telegram Channel](https://t.me/DADYT07)
+- [Telegram Group](https://t.me/@MdHackerr)
 
  * [GitHub](https://github.com/MD-HACKER07)
 ### If u Like the project, leave a star on the repository!
@@ -147,7 +126,7 @@ You can download it from [GitHub Releases](https://github.com/MD-HACKER07/MD-DDo
 
 ## Documentation
 
-You can read it from [GitHub Wiki](https://github.com/MD-HACKER07/MD-DDos/wiki)
+You can read it from [GitHub Wiki](https://github.com/MD-HACKER07/MD-DDos/)
 
 **Clone and Install Script**
 
